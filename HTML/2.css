@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 20px;
+    background-color: #20222a;
+
+
+}
+h5{
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'Arial';
+    text-align: center;
+    font-size: 27px;
+}
+/* Encabezados */
+h1, h2, h3, h4 {
+    color: #d1cbd1;
+    margin-bottom: 10px;
+    font-family: 'Arial';
+    text-align: center;
+    font-size: 27px;
+}
+
+/* Imagen responsiva */
+img {
+    max-width: 30%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+}
+/* Textos */
+p {
+    color: #fbf9ffdc;
+    font-family: "Arial";
+    font-size: 20px;
+    text-align: center;
+
+}
+iframe {
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px
+}
+button {
+    background-color: #292d54;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+
+}
+/* Estilo para el botón */
+#animated-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin: -500px 100px;
+    display: block;
+}
+.tooltip {
+    position: fixed; /* Posiciona el tooltip de forma fija en la ventana */
+    top: 50%; /* Centra verticalmente el tooltip en la página */
+    left: 50%; /* Centra horizontalmente el tooltip en la página */
+    transform: translate(-50%, -50%); /* Ajusta para centrarlo perfectamente */
+    display: inline-block; /* Permite que el tooltip se ajuste al contenido */
+    text-align: center; /* Centra el contenido del tooltip */
+    margin:50px -750px;
+    display: block;
+}
+/* Texto del tooltip (oculto por defecto) */
+.tooltip-text {
+    visibility: hidden; /* Oculta el tooltip por defecto */
+    background-color: rgb(41, 39, 112); /* Fondo negro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto dentro del tooltip */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    position: absolute; /* Posiciona el texto dentro del contenedor */
+    z-index: 1; /* Asegura que el tooltip esté por encima de otros elementos */
+    top: 100%; /* Coloca el tooltip justo debajo del botón */
+    left: 50%; /* Centra horizontalmente el tooltip respecto al botón */
+    transform: translateX(-50%); /* Ajusta para centrarlo perfectamente */
+    opacity: 0; /* Oculta el tooltip inicialmente */
+    transition: opacity 0.3s ease; /* Añade una transición suave para la opacidad */
+    margin-top: 10px; /* Añade un margen entre el botón y el tooltip */
+}
+/* Mostrar el tooltip cuando el botón está enfocado */
+#animated-button:focus + .tooltip .tooltip-text {
+    visibility: visible; /* Muestra el tooltip */
+    opacity: 1; /* Hace visible el tooltip */
+}
+
+
